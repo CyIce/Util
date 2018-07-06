@@ -45,7 +45,7 @@ public class EmailUtil {
             msg.setSubject("带音乐平台验证信息");
 
             StringBuilder builder = new StringBuilder();
-            builder.append(String.format("【带音乐平台】/n欢迎使用带音乐平台，您的验证码是：%d，3分钟内有效，请及时验证。",verification));
+            builder.append(String.format("【带音乐平台】\n欢迎使用带音乐平台，您的验证码是：%d，3分钟内有效，请及时验证。",verification));
             msg.setText(builder.toString());
             msg.setFrom(new InternetAddress("dai_music@163.com"));
 
